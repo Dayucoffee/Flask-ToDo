@@ -4,14 +4,14 @@ pipeline {
 
     environment {
         AWS_REGION = 'us-east-1'
-        PROJECT_DIR = "$WORKSPACE/Flask-ToDo/"
-        TERRAFORM_DIR = "$WORKSPACE/Flask-ToDo/terraform-setup"
+        PROJECT_DIR = "$WORKSPACE/flask-todo-app/"
+        TERRAFORM_DIR = "$WORKSPACE/flask-todo-app/terraform-setup"
     }
 
     stages {
         stage("Checking the code") {
             steps {
-                git branch: "main", url: "https://github.com/Dayucoffee/Flask-ToDo.git"
+                git branch: "main", url: "https://github.com/Pravesh-Sudha/Python-projects"
             }
         }
 
